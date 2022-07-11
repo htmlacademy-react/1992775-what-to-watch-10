@@ -1,11 +1,5 @@
-import React from "react";
-import MainPage from "../../pages/Main-page/Main-page";
-
-type AboutFilm = {
-  title: string;
-  genre: string;
-  year: number
-};
+import React from 'react';
+import MainPage from '../../pages/Main-page/Main-page';
 
 function App(): JSX.Element {
   return (

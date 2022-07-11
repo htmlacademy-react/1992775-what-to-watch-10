@@ -1,5 +1,5 @@
-import React from "react";
-import OneCard from "../../components/One-card";
+import React from 'react';
+import OneCard from '../../components/One-card';
 
 type AboutFilm = {
   title: string;
