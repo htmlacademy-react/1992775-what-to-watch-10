@@ -7,10 +7,15 @@ import MoviePage from '../../pages/Movie-page/Movie-page';
 import MyList from '../../pages/My-list/My-list';
 import Player from '../../pages/Player/Player';
 import SignIn from '../../pages/Sign-in/Sign-in';
-import { AppRoute, AuthorizationStatus } from '../../const';
+import { AppRoute, AuthorizationStatus } from '../../types/const';
 import PrivateRoute from '../private-route/private-route';
+import { FilmsCollection } from '../../types/films';
 
-function App(): JSX.Element {
+type MainScreen = {
+  films: FilmsCollection[],
+}
+
+function App({films}: MainScreen): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>

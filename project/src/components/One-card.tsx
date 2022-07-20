@@ -1,6 +1,13 @@
+import { title } from 'process';
 import React from 'react';
+import { FilmsCollection } from "../types/films";
 
-function OneCard() {
+type OneCardScreen = {
+  props: FilmsCollection[]
+}
+
+
+function OneCard(props: OneCardScreen) {
   return (
     <article className="small-film-card catalog__films-card">
       <div className="small-film-card__image">
@@ -13,7 +20,7 @@ function OneCard() {
       </div>
       <h3 className="small-film-card__title">
         <a className="small-film-card__link" href="film-page.html">
-          Fantastic Beasts: The Crimes of Grindelwald
+          {title}
         </a>
       </h3>
     </article>
